@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav Babu - Portfolio</title>
+<style>
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+ h2, h3, p, ul {
+    margin-bottom: 20px;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, section, footer {
+    padding: 80px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Hero Section */
+header {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 100px; /* Increased padding for better spacing */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #f2f2f2;
+    color: #333;
+    padding-bottom: 100px; /* Increased padding for better spacing */
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.portfolio p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Blog Section */
+.blog {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 100px; /* Increased padding for better spacing */
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.blog p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f2f2f2;
+    color: #333;
+    padding-bottom: 100px; /* Increased padding for better spacing */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        color: #333; /* Change text color */
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    color: #000; /* Change text color to black */
+}
+
+/* Image Animation */
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Expanded Image Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-height: 80vh;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Abhinav Babu</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="fadeIn">
+        <div class="container">
+            <h1>Welcome to Abhinav Babu's Portfolio</h1>
+            <p>A B.Tech student with a passion for Automobile, Software Development.</p>
+            <a href="#portfolio" class="btn">Explore Portfolio</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Abhinav Babu, a third-year Computer Science student pursuing my B.Tech degree. Alongside my academic journey, I've developed a deep passion for automobile and airplane design. From a young age, I've been fascinated by the intricacies of mechanical engineering and the sleek aesthetics of modern vehicles.</p>
+            <p>My interest in automobiles extends beyond mere admiration; I'm actively involved in various design projects, where I explore innovative concepts and integrate cutting-edge technologies into vehicle design. I believe that the future of transportation lies in sustainable, efficient, and aesthetically pleasing designs, and I'm committed to contributing to this vision.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Explore some of my recent projects showcasing my passion for WEBSITE DEVELOPED</p>
+            <!-- Portfolio items go here -->
+            <div class="portfolio-items">
+                <!-- Individual portfolio items -->
+                <div class="portfolio-item">
+                    <img src="ofs.png" alt="Project 1" onclick="openModal('ofs.png')">
+                    <h3>NCERC FEEDBACK SYSTEM</h3>
+                    <p>The Student-Teacher Feedback System is a web-based application designed to facilitate communication and feedback between students and teachers in an educational institution.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="srms.png" alt="Project 2" onclick="openModal('srms.png')">
+                    <h3>NCERC SRMS</h3>
+                    <p>The "NCERC Student Result Management System for Series Exam" is a comprehensive software application tailored to efficiently manage and process the results of series examinations conducted at Nehru College of Engineering and Research Centre (NCERC) and publish the results to students.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="srms.png" alt="Project 2" onclick="openModal('srms.png')">
+                    <h3>AES encryption system</h3>
+                    <p>The "NCERC Student Result Management System for Series Exam" is a comprehensive software application tailored to efficiently manage and process the results of series examinations conducted at Nehru College of Engineering and Research Centre (NCERC) and publish the results to students.</p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Image Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Blog Section -->
+   <section id="blog" class="blog">
+  <div class="container">
+    <h2>Blog</h2>
+    
+    <article>
+      <h3>Navigating the Crossroads: Automobile Innovation, Software Development, and the Future of Transportation</h3>
+      <p>In today's rapidly evolving technological landscape, the convergence of automobile innovation, software development, and the future of transportation presents an intriguing intersection ripe with opportunities for exploration and discussion. From the electrification of vehicles to the integration of artificial intelligence in transportation systems, each facet plays a pivotal role in shaping the way we move and interact with the world around us.</p>
+      
+      <h3>Electrification and Sustainable Mobility</h3>
+      <ul>
+        <p>Discuss the rising prominence of electric vehicles (EVs) and their impact on the automobile industry.</p>
+        <p>Explore advancements in battery technology and their role in enhancing the range and performance of EVs.</p>
+        <p>Highlight the environmental benefits of electrification, including reduced emissions and dependence on fossil fuels.</p>
+      </ul>
+      
+      <h3>Software Development Trends in Automotive Technology</h3>
+      <ul>
+        <p>Examine the intersection of software development and automotive engineering.</p>
+        <p>Discuss the emergence of connected vehicles and in-car infotainment systems.</p>
+        <p>Explore agile methodologies and DevOps practices in the automotive industry.</p>
+        <p>Highlight the importance of cybersecurity in automotive software development.</p>
+      </ul>
+    </article>
+    
+    <!-- Add more articles with blog content as needed -->
+    
+  </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Have a project in mind or want to discuss collaboration opportunities? Feel free to get in touch:</p>
+            <p>Phone: <a href="tel:+918590462267">8590462267</a></p>
+            <p>Email: <a href="mailto:abhinavbabu7551@gmail.com">abhinavbabu7551@gmail.com</a></p>
+            <!-- Contact form goes here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abhinav Babu Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const scroll = window.scrollY;
+            const fadeInElements = document.querySelectorAll('.fadeIn');
+            fadeInElements.forEach(element => {
+                if (element.offsetTop - window.innerHeight < scroll) {
+                    element.style.opacity = 1;
+                }
+            });
+        });
+
+        // Function to open the modal
+        function openModal(imageSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
