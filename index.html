@@ -247,6 +247,59 @@ footer p {
     width: 80%; /* Adjust width of the line */
     border-bottom: 2px solid #000; /* Define style of the line */
   }
+  /* Achievements Section */
+.achievements {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 100px; /* Adjust padding as needed */
+}
+
+.achievements h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    text-align: center;
+}
+
+.achievement-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.achievement-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.achievement-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.certificate-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Hover effect */
+  .certificate-link:hover {
+    background-color: #0056b3;
+  }
+
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
     /* Adjust font sizes and spacing for smaller screens */
@@ -430,6 +483,48 @@ footer p {
     
   </div>
 </section>
+
+ <!-- Achievements Section -->
+<section id="achievements" class="achievements">
+    <div class="container">
+        <h2>Achievements</h2>
+        <div class="achievements-grid">
+            <!-- Certificate or Recommendation items go here -->
+          
+
+            <div class="achievement-item">
+                <img src="feedappri.png" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
+
+                <h3>Feedback System Letter of Appriciation </h3>
+              
+            </div> 
+
+            <div class="achievement-item" >
+                <img src="onlinefeedback.png" alt="Certificate 1" height="50px" style="border: 1px solid black; border-radius: 5px;">
+                <h3>Online Feedback System & Digital Evaluation System</h3>
+            </div>
+
+            <div class="achievement-item">
+                <img src="campusamba.png" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
+
+                <h3>Champions Boat League Voulenteeer </h3>
+              
+            </div>
+            
+            <div class="achievement-item">
+                <img src="CBL VOULENTEER.jpeg" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
+
+                <h3>Champions Boat League Voulenteeer </h3>
+              
+            </div>
+
+            
+            <!-- Add more achievement items as needed -->
+        </div>
+        <a href="https://drive.google.com/drive/folders/1_Ct4eBWHLUloMptEaonXwx9ZChtPoar-?usp=sharing" class="certificate-link">View My Certificates</a>
+    </div>
+</section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
