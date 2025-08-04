@@ -1,391 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhinav Babu - Portfolio</title>
-<style>
-/* Reset Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Babu - Portfolio</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Basic Styles */
-body {
-    
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2;
-}
- h2, h3, p, ul {
-    margin-bottom: 20px;
-  }
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        h2, h3, p, ul {
+            margin-bottom: 20px;
+        }
 
-header, section, footer {
-    padding: 80px 0;
-    text-align: center;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
+        header, section, footer {
+            padding: 80px 0;
+            text-align: center;
+        }
 
-nav ul {
-    list-style-type: none;
-}
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul {
+            list-style-type: none;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-.btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-.btn:hover {
-    background-color: #45a049;
-}
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-/* Hero Section */
-header {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    position: relative;
-}
+        .btn:hover {
+            background-color: #45a049;
+        }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
+        /* Hero Section */
+        header {
+            background-image: url('/placeholder.svg?height=800&width=1600');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+        }
 
-header p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-/* About Section */
-.about {
-    background-color: #fff;
-    color: #333;
-    padding-bottom: 100px; /* Increased padding for better spacing */
-}
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
 
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        /* About Section */
+        .about {
+            background-color: #fff;
+            color: #333;
+            padding-bottom: 100px; /* Increased padding for better spacing */
+        }
 
-.about p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
-/* Portfolio Section */
-.portfolio {
-    background-color: #f2f2f2;
-    color: #333;
-    padding-bottom: 100px; /* Increased padding for better spacing */
-}
+        .about p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-.portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        /* Portfolio Section */
+        .portfolio {
+            background-color: #f2f2f2;
+            color: #333;
+            padding-bottom: 100px; /* Increased padding for better spacing */
+        }
 
-.portfolio p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+        .portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
-/* Blog Section */
-.blog {
-    background-color: #fff;
-    color: #333;
-    padding-bottom: 100px; /* Increased padding for better spacing */
-}
+        .portfolio p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-.blog h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        /* Blog Section */
+        .blog {
+            background-color: #fff;
+            color: #333;
+            padding-bottom: 100px; /* Increased padding for better spacing */
+        }
 
-.blog p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+        .blog h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
-/* Contact Section */
-.contact {
-    background-color: #f2f2f2;
-    color: #333;
-    padding-bottom: 100px; /* Increased padding for better spacing */
-}
+        .blog p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        /* Contact Section */
+        .contact {
+            background-color: #f2f2f2;
+            color: #333;
+            padding-bottom: 100px; /* Increased padding for better spacing */
+        }
 
-.contact p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-footer p {
-    font-size: 1.2rem;
-}
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
 
-/* Scroll Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        color: #333; /* Change text color */
-    }
-    to {
-        opacity: 1;
-    }
-}
+        footer p {
+            font-size: 1.2rem;
+        }
 
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    color: #000; /* Change text color to black */
-}
+        /* Scroll Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                color: #333; /* Change text color */
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
-/* Image Animation */
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-}
+        .fadeIn {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            color: #000; /* Change text color to black */
+        }
 
-.portfolio-item img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
+        /* Image Animation */
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-/* Expanded Image Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-}
+        .portfolio-item img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
 
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
+        /* Expanded Image Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
 
-.modal-content img {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-height: 80vh;
-}
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
 
-/* Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        .modal-content img {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-height: 80vh;
+        }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-.separator {
-    margin: 50px auto; /* Adjust margin to position the line vertically */
-    width: 80%; /* Adjust width of the line */
-    border-bottom: 2px solid #000; /* Define style of the line */
-  }
-  /* Achievements Section */
-.achievements {
-    background-color: #fff;
-    color: #333;
-    padding-bottom: 100px; /* Adjust padding as needed */
-}
+        /* Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-.achievements h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-.achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
+        .separator {
+            margin: 50px auto; /* Adjust margin to position the line vertically */
+            width: 80%; /* Adjust width of the line */
+            border-bottom: 2px solid #000; /* Define style of the line */
+        }
 
-.achievement-item {
-    text-align: center;
-}
+        /* Achievements Section */
+        .achievements {
+            background-color: #fff;
+            color: #333;
+            padding-bottom: 100px; /* Adjust padding as needed */
+        }
 
-.achievement-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
+        .achievements h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
-.achievement-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
 
-.achievement-item p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-.certificate-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-  }
+        .achievement-item {
+            text-align: center;
+        }
 
-  /* Hover effect */
-  .certificate-link:hover {
-    background-color: #0056b3;
-  }
-  .round-frame {
-        width: 150px;
-        height: 150px; 
-        border-radius: 50%; 
-        overflow: hidden; 
-        border: 5px solid #333;
-    }
+        .achievement-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
 
-    .round-frame img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-    }
+        .achievement-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
 
-/* Mobile Styles */
-@media only screen and (max-width: 768px) {
-    /* Adjust font sizes and spacing for smaller screens */
-    header h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
+        .achievement-item p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
 
-    header p {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-    }
+        .certificate-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
 
-    .about h2,
-    .portfolio h2,
-    .blog h2,
-    .contact h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
+        /* Hover effect */
+        .certificate-link:hover {
+            background-color: #0056b3;
+        }
 
-    .about p,
-    .portfolio p,
-    .blog p,
-    .contact p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
+        .round-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #333;
+        }
 
-    nav {
-        padding: 10px 0;
-    }
+        .round-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    nav ul li {
-        margin-right: 10px;
-    }
+        /* Mobile Styles */
+        @media only screen and (max-width: 768px) {
+            /* Adjust font sizes and spacing for smaller screens */
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
 
-    .btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+            header p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
 
-    .portfolio-item img {
-        margin-bottom: 5px;
-    }
+            .about h2,
+            .portfolio h2,
+            .blog h2,
+            .contact h2 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
 
-    .separator {
-        margin: 30px auto;
-    }
+            .about p,
+            .portfolio p,
+            .blog p,
+            .contact p {
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
 
-    footer p {
-        font-size: 1rem;
-    }
+            nav {
+                padding: 10px 0;
+            }
 
-    /* Adjust modal styles for smaller screens */
-    .modal-content {
-        width: 90%;
-    }
+            nav ul li {
+                margin-right: 10px;
+            }
 
-    .close {
-        font-size: 30px;
-    }
-}
+            .btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
 
-</style>
+            .portfolio-item img {
+                margin-bottom: 5px;
+            }
+
+            .separator {
+                margin: 30px auto;
+            }
+
+            footer p {
+                font-size: 1rem;
+            }
+
+            /* Adjust modal styles for smaller screens */
+            .modal-content {
+                width: 90%;
+            }
+
+            .close {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="round-frame">
-                <img src="MY.jpg" alt="Round Frame Image">
+                <img src="/placeholder.svg?height=150&width=150" alt="Round Frame Image">
             </div>
             <h1>Abhinav Babu</h1>
             <ul>
@@ -410,8 +412,7 @@ footer p {
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm Abhinav Babu, a Fourth-year Computer Science student pursuing my B.Tech degree. Alongside my academic journey, I've developed a deep passion for automobile and Full stack development 
-                . From a young age, I've been fascinated by the intricacies of mechanical engineering and the sleek aesthetics of modern vehicles.</p>
+            <p>I'm Abhinav Babu, a Fourth-year Computer Science student pursuing my B.Tech degree. Alongside my academic journey, I've developed a deep passion for automobile and Full stack development. From a young age, I've been fascinated by the intricacies of mechanical engineering and the sleek aesthetics of modern vehicles.</p>
             <p>I'm actively involved in various design projects, where I explore innovative concepts and integrate cutting-edge technologies into my design. I believe that the future lies in sustainable, efficient, and aesthetically pleasing designs, and I'm committed to contributing to this vision.</p>
         </div>
     </section>
@@ -425,104 +426,96 @@ footer p {
             <div class="portfolio-items">
                 <!-- Individual portfolio items -->
                 <div class="portfolio-item">
-                    <img src="ofs.png" alt="Project 1" onclick="openModal('ofs.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 1" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>NCERC FEEDBACK SYSTEM</h3>
                     <p>The Student-Teacher Feedback System is a web-based application designed to facilitate communication and feedback between students and teachers in an educational institution.</p>
                 </div><br><br><br><br>
                 <div class="separator"></div>
                 <div class="portfolio-item">
-                    <img src="srms.png" alt="Project 2" onclick="openModal('srms.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 2" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>NCERC SRMS</h3>
                     <p>The "NCERC Student Result Management System for Series Exam" is a comprehensive software application tailored to efficiently manage and process the results of series examinations conducted at Nehru College of Engineering and Research Centre (NCERC) and publish the results to students.</p>
                 </div><br><br><br><br>
                 <div class="separator"></div>
                 <div class="portfolio-item">
-                    <img src="aes.png" alt="Project 3" onclick="openModal('aes.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 3" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>AES encryption system</h3>
                     <p>Click <a href="https://abhinavbabu2003.github.io/EncryptionAES/ ">here</a> to go to the Text Encryption System.</p>
                     <p>The "NCERC Student Result Management System for Series Exam" is a comprehensive software application tailored to efficiently manage and process the results of series examinations conducted at Nehru College of Engineering and Research Centre (NCERC) and publish the results to students.</p>
                 </div><br><br><br><br>
                 <div class="separator"></div>
                 <div class="portfolio-item">
-                    <img src="message.png" alt="Project 4" onclick="openModal('message.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 4" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Message transport System</h3>
                     <p>The "Message Transport System" is a sophisticated software solution designed to facilitate seamless communication between users by enabling the creation, transmission, and reception of messages. With its intuitive interface and robust functionality, this system empowers users to exchange information efficiently and effectively. Whether for personal or professional use, the Message Transport System streamlines communication processes, allowing users to compose messages, specify recipients, and send messages with ease. Recipients can conveniently access received messages, review their contents, and respond accordingly, fostering smooth and productive communication interactions. With features such as secure message transmission, notification mechanisms, and user-friendly interfaces, the Message Transport System enhances connectivity and collaboration among users, promoting streamlined communication workflows and facilitating timely exchange of information.</p>
                 </div><br><br><br><br>
                 <div class="separator"></div>
                 <div class="portfolio-item">
-                    <img src="vote.png" alt="Project 5" onclick="openModal('vote.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 5" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Voting System</h3>
                     <p>The Voting System is a comprehensive software application designed to facilitate fair and transparent voting processes for various purposes, such as elections, surveys, or decision-making within organizations. This system provides an efficient platform for eligible users to cast their votes securely and conveniently, ensuring accuracy and integrity in the voting process.</p>
                 </div><br><br><br><br>
-
                  <div class="portfolio-item">
-                    <img src="imgtoda.png" alt="Project 6" onclick="openModal('imgtoda.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 6" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Image To Binary Converter</h3>
                     <p>Click <a href="https://abhinavbabu2003.github.io/imgtobin/">here</a> to go to the Image To Binary And Binary To Image Convertor.</p>
                     <p>This HTML file creates a web page for converting binary data to an image and vice versa. This code is useful for scenarios where users need to convert binary data to an image or vice versa, such as when working with image processing, data transmission, or cryptography.Users can either select an image file to convert to binary data or manually enter binary data to convert to an image. The "Copy" button allows users to easily copy the converted result to the clipboard for further use.Overall, this HTML file provides a simple and user-friendly interface for binary data and image conversion tasks.</p>
                 </div><br><br><br><br>
                 <div class="portfolio-item">
-                    <img src="encrypt.png" alt="Project 7" onclick="openModal('encrypt.png')"><br><br>
-                    <img src="encryptlogin.png" alt="Project 7" onclick="openModal('encryptlogin.png')"><br><br>
-                    <img src="encrypdash.png" alt="Project 7" onclick="openModal('encryptdash.png')"><br><br>
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 7" onclick="openModal('/placeholder.svg?height=400&width=600')"><br><br>
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 7" onclick="openModal('/placeholder.svg?height=400&width=600')"><br><br>
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 7" onclick="openModal('/placeholder.svg?height=400&width=600')"><br><br>
                     <h3>Encryptify</h3>
                     <p>"Created Encryptify, a comprehensive web application featuring user authentication, data encryption, and decryption functionalities, designed to safeguard sensitive information. Developed using PHP for backend logic, MySQL for database management, and industry-standard encryption algorithms, Encryptify ensures secure data handling while providing a seamless user experience."</p>
                 </div><br><br><br><br>
                 <div class="portfolio-item">
-                    <img src="netflix.png" alt="Project 8" onclick="openModal('imgtoda.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 8" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Netflix UI</h3>
                     <p>Click <a href="https://abhinavbabu2003.github.io/netflix/">here</a> to go to the Netflix UI.</p>
                     <p>"Crafted a dynamic web platform inspired by Netflix, featuring intuitive user interfaces, personalized recommendations, and seamless video streaming capabilities. Leveraged technologies such as HTML, CSS, JavaScript, and PHP to create a responsive and engaging user experience, enhancing content discovery and enjoyment for users worldwide."</p>
-                </div><br><br><br><br> 
-                    <div class="portfolio-item">
-                    <img src="hms.png" alt="Project 9" onclick="openModal('hms.png')">
+                </div><br><br><br><br>
+                     <div class="portfolio-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 9" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Hospital Management System</h3>
                     <p>"The Online Hospital Management System streamlines medical facility operations, facilitating appointments, patient records, staff management, and inventory control. Patients can schedule appointments, access medical history, and receive updates. Staff manage schedules, patient data, and resources efficiently. It enhances healthcare service delivery, ensuring seamless operations and improved patient care"</p>
                 </div><br><br><br><br>
                  <div class="portfolio-item">
-                    <img src="expense.png" alt="Project 9" onclick="openModal('expense.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 9" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Expense Tracker</h3>
                     <p>"An expense tracker is a tool used to monitor and manage personal or business spending. By recording and categorizing expenses, users gain insight into their financial habits, enabling better budgeting, identifying areas for saving, and achieving financial goals. It simplifies financial management and promotes responsible spending."</p>
                 </div><br><br><br><br>
-
                   <div class="portfolio-item">
-                    <img src="substructure.png" alt="Project 10" onclick="openModal('substructure.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Base Builder </h3>
                     <p>"Substructure is a crucial part of any building as it forms the foundation that supports the entire structure. Proper calculation and planning of the substructure are essential to ensure stability and longevity."</p>
                 </div><br><br><br><br>
-
                 <div class="portfolio-item">
-                    <img src="chat1.png" alt="Project 10" onclick="openModal('chat1.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Chat </h3>
                     <p>"An online texting application that can handle conversation between the selected members individually and help to communicate."</p>
                 </div><br><br><br><br>
-
                 <div class="portfolio-item">
-                    <img src="fms.png" alt="Project 10" onclick="openModal('fms.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Faculty Management System </h3>
-                    <p>"Faculty Management System is a specially designed  on Faculty information this software helps to keep track over faculty and their entire details and this can be used for college and school seamless without any problem with easy to use interface."</p>
+                    <p>"Faculty Management System is a specially designed on Faculty information this software helps to keep track over faculty and their entire details and this can be used for college and school seamless without any problem with easy to use interface."</p>
                 </div><br><br><br><br>
-                
                 <div class="portfolio-item">
-                    <img src="gpas.png" alt="Project 10" onclick="openModal('gpas.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Three Phase Password Authentication System </h3>
                     <p>"It is a secure login where to login it requirs three type of password on is normal text password followed by color combination and that followed by picture password. This helps us to highly secure the data with strong combinationof password"</p>
                 </div><br><br><br><br>
-
                 <div class="portfolio-item">
-                    <img src="sct.png" alt="Project 10" onclick="openModal('sct.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Smart City Traveller </h3>
                     <p>"Our company offers various travel packages that provide users with comprehensive details of tourist destinations. Each package includes all the necessary information about the trip, accessible with a single touch. This feature enables users to effortlessly select their preferred travel location and find the best package that suits their needs."</p>
                 </div><br><br><br><br>
-
                 <div class="portfolio-item">
-                    <img src="stdatt.png" alt="Project 10" onclick="openModal('stdatt.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Student Attendence System</h3>
-                    <p>"<p>"This is a student attendance system designed for universal application, ensuring ease of use across different educational institutions. It includes multiple functions, incorporating faculty data, student data, and the integration of course, class, and section information. This comprehensive approach helps academic management utilize the software seamlessly and without errors."</p>
-                  </div><br><br><br><br>
-
+                    <p>"This is a student attendance system designed for universal application, ensuring ease of use across different educational institutions. It includes multiple functions, incorporating faculty data, student data, and the integration of course, class, and section information. This comprehensive approach helps academic management utilize the software seamlessly and without errors."</p>
+                </div><br><br><br><br>
                 <div class="portfolio-item">
-                    <img src="travelly.png" alt="Project 10" onclick="openModal('travelly.png')">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Project 10" onclick="openModal('/placeholder.svg?height=400&width=600')">
                     <h3>Travelly</h3>
                     <p>""This is a special software designed to store all the memorable details of the places you visit, including descriptions and data. It allows you to share your experiences with the world, preserving memories that never fade.""</p>
                 </div><br><br><br><br>
@@ -539,75 +532,57 @@ footer p {
     </div>
 
     <!-- Blog Section -->
-   <section id="blog" class="blog">
-  <div class="container">
-    <h2>Blog</h2>
-    
-    <article>
-      <h3>Navigating the Crossroads: Automobile Innovation, Software Development, and the Future of Transportation</h3>
-      <p>In today's rapidly evolving technological landscape, the convergence of automobile innovation, software development, and the future of transportation presents an intriguing intersection ripe with opportunities for exploration and discussion. From the electrification of vehicles to the integration of artificial intelligence in transportation systems, each facet plays a pivotal role in shaping the way we move and interact with the world around us.</p>
-      
-      <h3>Electrification and Sustainable Mobility</h3>
-      <ul>
-        <p>Discuss the rising prominence of electric vehicles (EVs) and their impact on the automobile industry.</p>
-        <p>Explore advancements in battery technology and their role in enhancing the range and performance of EVs.</p>
-        <p>Highlight the environmental benefits of electrification, including reduced emissions and dependence on fossil fuels.</p>
-      </ul>
-      
-      <h3>Software Development Trends in Automotive Technology</h3>
-      <ul>
-        <p>Examine the intersection of software development and automotive engineering.</p>
-        <p>Discuss the emergence of connected vehicles and in-car infotainment systems.</p>
-        <p>Explore agile methodologies and DevOps practices in the automotive industry.</p>
-        <p>Highlight the importance of cybersecurity in automotive software development.</p>
-      </ul>
-    </article>
-    
-    <!-- Add more articles with blog content as needed -->
-    
-  </div>
-</section>
-
- <!-- Achievements Section -->
-<section id="achievements" class="achievements">
-    <div class="container">
-        <h2>Achievements</h2>
-        <div class="achievements-grid">
-            <!-- Certificate or Recommendation items go here -->
-          
-
-            <div class="achievement-item">
-                <img src="feedappri.png" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
-
-                <h3>Feedback System Letter of Appriciation </h3>
-              
-            </div> 
-
-            <div class="achievement-item" >
-                <img src="onlinefeedback.png" alt="Certificate 1" height="50px" style="border: 1px solid black; border-radius: 5px;">
-                <h3>Online Feedback System & Digital Evaluation System</h3>
-            </div>
-
-            <div class="achievement-item">
-                <img src="campusamba.png" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
-
-                <h3>Champions Boat League Voulenteeer </h3>
-              
-            </div>
-            
-            <div class="achievement-item">
-                <img src="CBL VOULENTEER.jpeg" alt="Certificate 2" height="50px" style="border: 1px solid black; border-radius: 5px;">
-
-                <h3>Champions Boat League Voulenteeer </h3>
-              
-            </div>
-
-            
-            <!-- Add more achievement items as needed -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <article>
+                <h3>Navigating the Crossroads: Automobile Innovation, Software Development, and the Future of Transportation</h3>
+                <p>In today's rapidly evolving technological landscape, the convergence of automobile innovation, software development, and the future of transportation presents an intriguing intersection ripe with opportunities for exploration and discussion. From the electrification of vehicles to the integration of artificial intelligence in transportation systems, each facet plays a pivotal role in shaping the way we move and interact with the world around us.</p>
+                <h3>Electrification and Sustainable Mobility</h3>
+                <ul>
+                    <p>Discuss the rising prominence of electric vehicles (EVs) and their impact on the automobile industry.</p>
+                    <p>Explore advancements in battery technology and their role in enhancing the range and performance of EVs.</p>
+                    <p>Highlight the environmental benefits of electrification, including reduced emissions and dependence on fossil fuels.</p>
+                </ul>
+                <h3>Software Development Trends in Automotive Technology</h3>
+                <ul>
+                    <p>Examine the intersection of software development and automotive engineering.</p>
+                    <p>Discuss the emergence of connected vehicles and in-car infotainment systems.</p>
+                    <p>Explore agile methodologies and DevOps practices in the automotive industry.</p>
+                    <p>Highlight the importance of cybersecurity in automotive software development.</p>
+                </ul>
+            </article>
+            <!-- Add more articles with blog content as needed -->
         </div>
-        <a href="https://drive.google.com/drive/folders/1r0bzNv_rRGcAQ8kSQPIX7NJMtncqn41C?usp=sharing" class="certificate-link">View My Certificates</a>
-    </div>
-</section>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="achievements-grid">
+                <!-- Certificate or Recommendation items go here -->
+                <div class="achievement-item">
+                    <img src="/placeholder.svg?height=50&width=50" alt="Certificate 2" style="border: 1px solid black; border-radius: 5px;">
+                    <h3>Feedback System Letter of Appriciation </h3>
+                </div>
+                <div class="achievement-item" >
+                    <img src="/placeholder.svg?height=50&width=50" alt="Certificate 1" style="border: 1px solid black; border-radius: 5px;">
+                    <h3>Online Feedback System & Digital Evaluation System</h3>
+                </div>
+                <div class="achievement-item">
+                    <img src="/placeholder.svg?height=50&width=50" alt="Certificate 2" style="border: 1px solid black; border-radius: 5px;">
+                    <h3>Champions Boat League Voulenteeer </h3>
+                </div>
+                <div class="achievement-item">
+                    <img src="/placeholder.svg?height=50&width=50" alt="Certificate 2" style="border: 1px solid black; border-radius: 5px;">
+                    <h3>Champions Boat League Voulenteeer </h3>
+                </div>
+                <!-- Add more achievement items as needed -->
+            </div>
+            <a href="https://drive.google.com/drive/folders/1r0bzNv_rRGcAQ8kSQPIX7NJMtncqn41C?usp=sharing" class="certificate-link">View My Certificates</a>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -654,7 +629,5 @@ footer p {
             modal.style.display = "none";
         }
     </script>
-    
-
 </body>
 </html>
